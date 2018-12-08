@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <DatePicker
+        android:id="@+id/dateInput"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"/>
+
+    <Button
+        android:id="@+id/reqYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/workingDayInput"
+        android:layout_toLeftOf="@id/unbind"
+        android:text="REQUEST YEAR"/>
+
+    <Button
+        android:id="@+id/reqDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/workingDayInput"
+        android:layout_toRightOf="@id/unbind"
+        android:text="REQUEST DATE"/>
+
+    <EditText
+        android:id="@+id/workingDayInput"
+        android:hint="Enter working days here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateInput"
+        android:layout_centerInParent="true"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/unbind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/workingDayInput"
+        android:layout_centerInParent="true"
+        android:text="Unbind From Service"/>
+
+
+
+</RelativeLayout>
